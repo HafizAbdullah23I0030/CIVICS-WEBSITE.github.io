@@ -11,6 +11,13 @@ body {
     background-color: #f4f4f4; 
 }
 
+/* FONTS */
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Teachers', serif;
+    font-style: normal;
+}
+/* FONTS */
+
 header {
     display: flex;
     align-items: center;
@@ -45,7 +52,7 @@ nav {
     background-color: #005a9c; 
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding-top: 15px;
 }
 
 nav ul {
@@ -183,16 +190,33 @@ nav ul li .btn:hover {
     margin-bottom: 1em;
 }
 
+.heading-container {
+    background-color: #0679cb;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #333;
+}
+/* 
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+    text-decoration: none;
+} */
+
+
 /* Students Page */
 .Students h1{
     font-size: 2.5em;
     color: #005a9c; 
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 
 .Students h1{
         font-size: 2.5em;
         color: #005a9c; 
-        margin-bottom: 80px;
-    }
+        margin-bottom: 50px;
+}
