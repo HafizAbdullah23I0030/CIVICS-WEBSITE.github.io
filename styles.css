@@ -1,12 +1,12 @@
 :root {
     --primary-color: #005a9c; /* Main blue shade */
-    --secondary-color: #7c4dff; /* Purple shade */
+    --secondary-color: #6d4dff; /* Purple shade */
     --background-color: #f4f4f4; /* Light gray */
     --text-color: #333; /* Dark gray for readability */
     --card-bg-color: #0679cb; /* Consistent card color */
     --hover-bg-color: #c0c0c0; /* Hover effect color */
     --footer-bg-color: #063970; /* Footer background */
-    --footer-accent: #7c4dff; /* Footer accent links */
+    --footer-accent: #6d4dff; /* Footer accent links */
 }
 
 * {
@@ -178,6 +178,7 @@ nav ul li .btn:hover {
     padding: 1em;
     transition: transform 0.2s;
     color: #fff;
+    width: 400px;
 }
 
 .card:hover {
@@ -188,7 +189,7 @@ nav ul li .btn:hover {
 
 .card img {
     width: 100%;
-    max-width: 200px;
+    /* max-width: 200px; */
     height: 150px;
     object-fit: cover;
     border-radius: 4px;

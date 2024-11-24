@@ -19,18 +19,22 @@
     <style>
         .card-container {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-            padding-right: 70px;
-            padding-left: 70px;
+            /* Use flexbox */
+            flex-direction: column;
+            /* Align cards vertically */
+            align-items: center;
+            /* Center horizontally */
+            justify-content: center;
+            /* Center vertically */
+            /* min-height: 100vh; */
+            margin: 0;
         }
 
         .card {
             background-color: #f4f4f9;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 500px;
             padding: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
@@ -44,6 +48,15 @@
         .heading-container h3 {
             font-size: 1.5rem;
             font-weight: 600;
+        }
+
+        .card img,
+        .content img {
+            max-width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            display: block;
+            margin: auto;    
         }
 
         /* Content under each card */
@@ -129,7 +142,7 @@
             <img src="resources/MainGoldenRatio.jpg" alt="">
         </div>
     </section>
-    
+
     <!-- Content sections -->
     <section class="cards">
         <h2>Explore Golden Ratio Applications</h2>
@@ -164,7 +177,7 @@
 
             <a href="javascript:void(0)" class="card" onclick="toggleContent('goldenRatioArtContent')">
                 <div class="heading-container">
-                    <h3>Golden Ratio in Art</h3>
+                    <h3>Art</h3>
                 </div>
                 <p style="margin-top: 20px;color: black;">Discover how artists like Da Vinci and others used the Golden
                     Ratio to create visually appealing compositions.</p>
@@ -176,13 +189,14 @@
                         <h4>Mona Lisa</h4>
                         <p>Leonardo da Vinci's famous painting incorporates the Golden Ratio in the composition,
                             creating a sense of visual balance and harmony.</p>
+                        <img src="resources/GoldenRatioHuman.png" alt="">
                     </section>
                 </article>
             </div>
 
             <a href="javascript:void(0)" class="card" onclick="toggleContent('goldenRatioNatureContent')">
                 <div class="heading-container">
-                    <h3>Golden Ratio in Nature</h3>
+                    <h3>Nature</h3>
                 </div>
                 <p style="margin-top: 20px;color: black;">Explore examples of the Golden Ratio found in nature, from
                     flowers to shells.</p>
@@ -194,28 +208,32 @@
                         <h4>Flowers and Plants</h4>
                         <p>The arrangement of petals in many flowers follows the Fibonacci sequence, creating a visually
                             pleasing spiral.</p>
+                            <img src="resources/GoldenRatioNatur.jpg" alt="">
                     </section>
                     <section>
                         <h4>Animal Proportions</h4>
                         <p>The Golden Ratio can be found in the body proportions of many animals, from birds to mammals,
                             creating an aesthetically pleasing balance.</p>
+                            <img src="resources/goldenratioanimals.gif" alt="">
                     </section>
                     <section>
                         <h4>Spiral Galaxies</h4>
                         <p>Spiral galaxies often exhibit a logarithmic spiral pattern that approximates the Golden
                             Ratio, suggesting a cosmic connection to this mathematical concept.</p>
+                            <img src="resources/goldenratiogalaxies.gif" alt="">
                     </section>
                     <section>
                         <h4>Human Body</h4>
                         <p>The human body also displays instances of the Golden Ratio, from the arrangement of bones to
                             the proportions of our limbs.</p>
+                            <img src="resources/GoldenRatioHumanbody.png" alt="">
                     </section>
                 </article>
             </div>
 
             <a href="javascript:void(0)" class="card" onclick="toggleContent('goldenRatioArchitectureContent')">
                 <div class="heading-container">
-                    <h3>Golden Ratio in Architecture</h3>
+                    <h3>Architecture</h3>
                 </div>
                 <p style="margin-top: 20px;color: black;">See how the Golden Ratio has influenced architectural design
                     and the layout of buildings.</p>
@@ -227,6 +245,7 @@
                         <h4>Taj Mahal</h4>
                         <p>The Taj Mahal exemplifies the Golden Ratio in its symmetrical design, creating a breathtaking
                             and harmonious structure.</p>
+                        <img src="resources/TajMahal.jpg" alt="">
                     </section>
                 </article>
             </div>
